@@ -137,7 +137,7 @@
   <con:properties>
     <con:property>
       <con:name>locationParam</con:name>
-      <con:value>Boston</con:value>
+      <con:value>London</con:value>
     </con:property>
   </con:properties>
   <con:reportParameters/>
