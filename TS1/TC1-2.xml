@@ -120,12 +120,6 @@
       </con:request>
     </con:config>
   </con:testStep>
-  <con:testStep id="5caf1615-7bed-4d18-aa37-564a836f77f0" name="Delay" type="delay">
-    <con:settings/>
-    <con:config>
-      <delay>2000</delay>
-    </con:config>
-  </con:testStep>
   <con:testStep id="4f303ebd-e806-48c2-aae1-cc62bae94424" name="Data Source Loop" type="datasourceloop">
     <con:settings/>
     <con:config>
