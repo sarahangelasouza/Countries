@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="19395633-24eb-41ff-9d0c-5f3a9a4fef46" keepSession="false" name="TC1 2" searchProperties="true" timeout="0">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="19395633-24eb-41ff-9d0c-5f3a9a4fef46" keepSession="false" name="TC1 2.0" searchProperties="true" timeout="0">
   <con:settings id="d236fa80-fa13-497c-a327-feabbdbc9fb0">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">false</con:setting>
     <con:setting id="ErrorDetails">true</con:setting>
     <con:setting id="IncludeCoverage">true</con:setting>
-    <con:setting id="19395633-24eb-41ff-9d0c-5f3a9a4fef46fileName">TC1-2</con:setting>
+    <con:setting id="19395633-24eb-41ff-9d0c-5f3a9a4fef46fileName">TC1-2.0</con:setting>
   </con:settings>
   <con:testStep id="2d163621-6653-4042-bb11-38b9027415c4" name="Data Source" type="datasource">
     <con:settings/>
