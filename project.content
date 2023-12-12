@@ -1,7 +1,8 @@
 http%3A%2F%2Fapi.openweathermap.org\Weather.xml
-GraphQL-Service-1\Queries.xml
 GraphQL-Service-1\Mutations.xml
+GraphQL-Service-1\Queries.xml
 Security-Test-1.xml
 TS1\TC1.xml
+TS1\TC1-v2.0.xml
 Load-Test-1.xml
 http%3A%2F%2Fapi.openweathermap.org-Virtual-Service\%2Fdata%2F2.5%2Fweather.xml
