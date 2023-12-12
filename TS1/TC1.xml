@@ -73,6 +73,7 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
+          <con:entry key="q" value="${#TestCase#locationParam}"/>
           <con:entry key="appid" value="85c705dd76051cb3d8e5540b300279d4"/>
         </con:parameters>
         <con:parameterOrder>
@@ -133,7 +134,12 @@
       <discardResults>false</discardResults>
     </con:config>
   </con:testStep>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>locationParam</con:name>
+      <con:value>Boston</con:value>
+    </con:property>
+  </con:properties>
   <con:reportParameters/>
   <con:breakPoints>
     <con:testStepId>9f318ce3-3bec-453e-b873-36dc23cc8db7</con:testStepId>
