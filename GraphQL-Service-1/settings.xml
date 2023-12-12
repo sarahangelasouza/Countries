@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" xsi:type="con:GraphQLService" id="b11be57a-aa6c-49d1-aa9c-b23935adc67b" name="GraphQL Service 1" type="graphql" definitionUrl="file:/C:/Users/sarah.souza/Documents/schema.graphql">
+  <con:settings id="69bc9376-4b1f-416c-959c-f9f7f7896e84">
+    <con:setting id="b11be57a-aa6c-49d1-aa9c-b23935adc67bfileName">GraphQL-Service-1</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="file:/C:/Users/sarah.souza/Documents/schema.graphql">
+    <con:part>
+      <con:url>file:/C:/Users/sarah.souza/Documents/schema.graphql</con:url>
+      <con:content>schema {
+    query: Query
+	mutation: Mutation
+}
+
+directive @cacheControl(
+  maxAge: Int
+  scope: CacheControlScope
+) on FIELD_DEFINITION | OBJECT | INTERFACE
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
+type Continent {
+  code: String
+  name: String
+  countries: [Country]
+}
+
+type Country {
+  code: String
+  name: String
+  native: String
+  phone: String
+  continent: Continent
+  currency: String
+  languages: [Language]
+  emoji: String
+  emojiU: String
+}
+
+type Language {
+  code: String
+  name: String
+  native: String
+  rtl: Int
+}
+
+type Query {
+  continents: [Continent]
+  continent(code: String): Continent
+  countries: [Country]
+  country(code: String): Country
+  languages: [Language]
+  language(code: String): Language
+}
+
+# The `Upload` scalar type represents a file upload.
+scalar Upload</con:content>
+      <con:type>https://graphql.org/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
+  </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:interface>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/data/2.5/weather" method="GET" resourcePath="/data/2.5/weather" id="00a93afd-7128-4677-bbc5-0f6b0c94e5e0">
+  <con:settings id="11d0c53b-bd8c-4c1a-a159-5814af1b7a18">
+    <con:setting id="00a93afd-7128-4677-bbc5-0f6b0c94e5e0fileName">%2Fdata%2F2.5%2Fweather</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>PARAMETER</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=Boston&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>Boston</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EXISTS</con:parameterOperationType>
+        <con:parameterName>units</con:parameterName>
+        <con:parameterValue/>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=Boston&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=Miami&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>Miami</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EXISTS</con:parameterOperationType>
+        <con:parameterName>units</con:parameterName>
+        <con:parameterValue/>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=Miami&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=London&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>London</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EXISTS</con:parameterOperationType>
+        <con:parameterName>units</con:parameterName>
+        <con:parameterValue/>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=London&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+  </con:parameterDispatcherRuleContainer>
+  <con:routeEnabled>false</con:routeEnabled>
+  <con:conditionalRoutingEnabled>false</con:conditionalRoutingEnabled>
+  <con:routeScript/>
+  <con:saveRoutedResponse>false</con:saveRoutedResponse>
+  <con:response name="Response 1" id="65ddf986-e4ab-47b4-8aa8-ae3bcaea2ae9" httpResponseStatus="400" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{message: "location not found"}</con:responseContent>
+  </con:response>
+  <con:response name="For q=Boston&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="dfc5c813-4b1e-4d9c-8284-09b0d0243807" httpResponseStatus="202" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":-71.0598,"lat":42.3584},"weather":[{"id":801,"main":"Test","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":294.4,"feels_like":293.86,"temp_min":291.31,"temp_max":296.94,"pressure":1023,"humidity":49},"visibility":10000,"wind":{"speed":5.81,"deg":0,"gust":0},"clouds":{"all":20},"dt":1696272447,"sys":{"type":2,"id":2013408,"country":"US","sunrise":1696243317,"sunset":1696285511},"timezone":-14400,"id":4930956,"name":"Boston","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=boston&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Mon, 02 Oct 2023 18:48:58 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="For q=Miami&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="22c00edf-872b-4207-8190-09cb7ed6664e" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":-80.1937,"lat":25.7743},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":300.78,"feels_like":304.75,"temp_min":299.15,"temp_max":302.6,"pressure":1013,"humidity":83},"visibility":10000,"wind":{"speed":5.66,"deg":60,"gust":10.8},"clouds":{"all":100},"dt":1696272294,"sys":{"type":2,"id":2009435,"country":"US","sunrise":1696245195,"sunset":1696288017},"timezone":-14400,"id":4164138,"name":"Miami","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=miami&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Mon, 02 Oct 2023 18:49:03 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="For q=London&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="a2bc7674-8e35-404f-891e-d5080053be08" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":-0.1257,"lat":51.5085},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"base":"stations","main":{"temp":291.2,"feels_like":291.49,"temp_min":290.07,"temp_max":292.19,"pressure":1012,"humidity":93},"visibility":10000,"wind":{"speed":4.12,"deg":90},"rain":{"1h":0.21},"clouds":{"all":100},"dt":1696272515,"sys":{"type":2,"id":2006068,"country":"GB","sunrise":1696226516,"sunset":1696268271},"timezone":3600,"id":2643743,"name":"London","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=london&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Mon, 02 Oct 2023 18:49:07 GMT</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="06c2e17f-ae9b-4a8e-a413-5b61f2161026" name="TS1">
+  <con:settings id="352c55a3-4149-4116-aab1-46a7288f8eb2">
+    <con:setting id="06c2e17f-ae9b-4a8e-a413-5b61f2161026fileName">TS1</con:setting>
+  </con:settings>
+  <con:runType>PARALLELL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>

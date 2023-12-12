@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operationGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" type="query" name="Queries" id="b3d37ab9-5916-4aea-ab1d-aa7e591d5875">
+  <con:settings id="3cfc8262-a87b-4cad-91b1-582b642edb49">
+    <con:setting id="b3d37ab9-5916-4aea-ab1d-aa7e591d5875fileName">Queries</con:setting>
+  </con:settings>
+  <con:graphQLOperation name="continents" bindingOperationName="continents" id="05e4404a-7cb7-4aba-8c68-254eb9a93ff6">
+    <con:settings/>
+    <con:graphQLRequest name="continents" id="b3d62f34-320d-45da-bcb9-3dc2ea3574e1">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
+      <con:request>{"query":"{\n  continents {\n    code\n    name\n    countries {\n      code\n      name\n      native\n      phone\n\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:originalUri>https://countries.trevorblades.com/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+    <con:environmentSpec>
+      <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="continent" bindingOperationName="continent" id="1f591ca0-b212-4190-859a-5224b981ea26">
+    <con:settings/>
+    <con:graphQLRequest name="continent" id="69614277-e984-4e30-8829-50491559601d">
+      <con:settings/>
+      <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
+      <con:request>{"query":"{\n  continent(code: \"string\") {\n    code\n    name\n    countries {\n      code\n      name\n      native\n      phone\n      continent {\n        code\n        name\n      }\n      currency\n      languages {\n        code\n        name\n        native\n        rtl\n      }\n      emoji\n      emojiU\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+    <con:environmentSpec>
+      <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="countries" bindingOperationName="countries" id="4bcffc2e-886e-4adb-90f8-38b7e377d9b4">
+    <con:settings/>
+    <con:graphQLRequest name="countries" id="a92945cf-c1eb-4146-af6f-e9de83131653">
+      <con:settings/>
+      <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
+      <con:request>{"query":"{\n  countries {\n    code\n    name\n    native\n    phone\n    continent {\n      code\n      name\n      countries {\n        code\n        name\n        native\n        phone\n        currency\n        languages {\n          code\n          name\n          native\n          rtl\n        }\n        emoji\n        emojiU\n      }\n    }\n    currency\n    emoji\n    emojiU\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+    <con:environmentSpec>
+      <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="country" bindingOperationName="country" id="c01941ee-8f66-473d-8c93-6c9a32bb76e6">
+    <con:settings/>
+    <con:graphQLRequest name="country" id="7637d012-c2f2-4126-9254-5cbe192602c0">
+      <con:settings/>
+      <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
+      <con:request>{"query":"{\n  country(code: \"string\") {\n    code\n    name\n    native\n    phone\n    continent {\n      code\n      name\n      countries {\n        code\n        name\n        native\n        phone\n        currency\n        languages {\n          code\n          name\n          native\n          rtl\n        }\n        emoji\n        emojiU\n      }\n    }\n    currency\n    emoji\n    emojiU\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+    <con:environmentSpec>
+      <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="languages" bindingOperationName="languages" id="91bdd37b-90f4-415d-82b2-e9d5eea71295">
+    <con:settings/>
+    <con:graphQLRequest name="languages" id="79176515-4476-4feb-9f98-a5534ecc3c6a">
+      <con:settings/>
+      <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
+      <con:request>{"query":"{\n  languages {\n    code\n    name\n    native\n    rtl\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+    <con:environmentSpec>
+      <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="language" bindingOperationName="language" id="1023863c-d02a-409f-9ecb-dd2b79ece2e7">
+    <con:settings/>
+    <con:graphQLRequest name="language" id="d07b667d-d168-4da1-b286-66fef94b5672">
+      <con:settings/>
+      <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
+      <con:request>{"query":"{\n  language(code: \"string\") {\n    code\n    name\n    native\n    rtl\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+    <con:environmentSpec>
+      <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:graphQLOperation>
+  <con:environmentSpec>
+    <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:operationGroup>

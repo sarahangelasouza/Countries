@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" xsi:type="con:RestService" id="1ab18618-7e3e-49f0-bd16-0fd766eb68b1" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://api.openweathermap.org" type="rest">
+  <con:settings id="e53b1485-3950-4f29-b956-ad3252cadd84">
+    <con:setting id="1ab18618-7e3e-49f0-bd16-0fd766eb68b1fileName">http%3A%2F%2Fapi.openweathermap.org</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>http://api.openweathermap.org</con:endpoint>
+    <con:endpoint>http://localhost:8090/</con:endpoint>
+  </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:interface>

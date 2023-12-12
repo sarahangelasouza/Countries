@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operationGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" type="mutation" name="Mutations" id="f33f25eb-5264-4a5b-849b-a45df6d7786f">
+  <con:settings id="65077f65-8e27-4452-b52b-1a4ff4bdc6a9">
+    <con:setting id="f33f25eb-5264-4a5b-849b-a45df6d7786ffileName">Mutations</con:setting>
+  </con:settings>
+  <con:environmentSpec>
+    <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:operationGroup>
