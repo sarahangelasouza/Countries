@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="Weather" path="/data/2.5/weather" id="65d79b51-9a89-4f8a-9c38-6bd76d32520f">
-  <con:settings id="ab8cb002-037e-4319-add0-638fbdb3f701">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="65d79b51-9a89-4f8a-9c38-6bd76d32520f" name="Weather" path="/data/2.5/weather">
+  <con:settings id="9e8c0991-4119-4c9b-97b1-57032f21b355">
     <con:setting id="65d79b51-9a89-4f8a-9c38-6bd76d32520ffileName">Weather</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="Weather" id="593ed600-1983-4da6-bd44-f5db7441bc01" method="GET">
+  <con:method id="593ed600-1983-4da6-bd44-f5db7441bc01" method="GET" name="Weather">
     <con:settings/>
     <con:parameters>
       <con:parameter required="true">
@@ -12,44 +12,44 @@
         <con:value>Boston</con:value>
         <con:style>QUERY</con:style>
         <con:default>Boston</con:default>
-        <con:path xsi:nil="true"/>
-        <con:description xsi:nil="true"/>
+        <con:path/>
+        <con:description/>
       </con:parameter>
       <con:parameter required="true">
         <con:name>appid</con:name>
         <con:value>85c705dd76051cb3d8e5540b300279d4</con:value>
         <con:style>QUERY</con:style>
         <con:default>85c705dd76051cb3d8e5540b300279d4</con:default>
-        <con:path xsi:nil="true"/>
-        <con:description xsi:nil="true"/>
+        <con:path/>
+        <con:description/>
       </con:parameter>
       <con:parameter>
         <con:name>units</con:name>
         <con:value>metric</con:value>
         <con:style>QUERY</con:style>
         <con:default>metric</con:default>
-        <con:description xsi:nil="true"/>
+        <con:description/>
       </con:parameter>
     </con:parameters>
     <con:representation type="RESPONSE">
       <con:mediaType>application/json; charset=utf-8</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
-      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
+      <con:element>weat:Response</con:element>
     </con:representation>
     <con:representation type="RESPONSE">
       <con:mediaType>application/json;charset=utf-8</con:mediaType>
       <con:status>200 202</con:status>
       <con:params/>
-      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
+      <con:element>weat:Response</con:element>
     </con:representation>
     <con:representation type="FAULT">
       <con:mediaType>application/json;charset=utf-8</con:mediaType>
       <con:status>400</con:status>
       <con:params/>
-      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Fault</con:element>
+      <con:element>weat:Fault</con:element>
     </con:representation>
-    <con:request name="Request 1" id="4bd95571-943c-4282-97a1-e4c40f5cf71d" mediaType="application/json">
+    <con:request id="4bd95571-943c-4282-97a1-e4c40f5cf71d" mediaType="application/json" name="Request 1">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
@@ -81,7 +81,7 @@
       </con:entry>
     </con:environmentSpec>
   </con:method>
-  <con:method name="Weather 2" id="c3fd1feb-c0ed-4bf5-9808-45844c898c64" method="GET">
+  <con:method id="c3fd1feb-c0ed-4bf5-9808-45844c898c64" method="GET" name="Weather 2">
     <con:settings/>
     <con:parameters>
       <con:parameter required="true">
@@ -89,25 +89,25 @@
         <con:value>Boston</con:value>
         <con:style>QUERY</con:style>
         <con:default>Boston</con:default>
-        <con:path xsi:nil="true"/>
-        <con:description xsi:nil="true"/>
+        <con:path/>
+        <con:description/>
       </con:parameter>
       <con:parameter required="true">
         <con:name>appid</con:name>
         <con:value>85c705dd76051cb3d8e5540b300279d4</con:value>
         <con:style>QUERY</con:style>
         <con:default>85c705dd76051cb3d8e5540b300279d4</con:default>
-        <con:path xsi:nil="true"/>
-        <con:description xsi:nil="true"/>
+        <con:path/>
+        <con:description/>
       </con:parameter>
     </con:parameters>
     <con:representation type="RESPONSE">
       <con:mediaType>application/json; charset=utf-8</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
-      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
+      <con:element>weat:Response</con:element>
     </con:representation>
-    <con:request name="Request 1" id="c7eba91e-0915-4fbb-b1a5-0a493243c283" mediaType="application/json">
+    <con:request id="c7eba91e-0915-4fbb-b1a5-0a493243c283" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://api.openweathermap.org</con:endpoint>
       <con:credentials>

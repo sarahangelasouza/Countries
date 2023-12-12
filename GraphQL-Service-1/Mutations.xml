@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operationGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" type="mutation" name="Mutations" id="f33f25eb-5264-4a5b-849b-a45df6d7786f">
-  <con:settings id="65077f65-8e27-4452-b52b-1a4ff4bdc6a9">
+<con:operationGroup xmlns:con="http://eviware.com/soapui/config" id="f33f25eb-5264-4a5b-849b-a45df6d7786f" name="Mutations" type="mutation">
+  <con:settings id="7bb72a4a-ab75-41b8-8e51-b4e9799bffae">
     <con:setting id="f33f25eb-5264-4a5b-849b-a45df6d7786ffileName">Mutations</con:setting>
   </con:settings>
   <con:environmentSpec>

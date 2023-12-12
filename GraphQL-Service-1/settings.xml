@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" xsi:type="con:GraphQLService" id="b11be57a-aa6c-49d1-aa9c-b23935adc67b" name="GraphQL Service 1" type="graphql" definitionUrl="file:/C:/Users/sarah.souza/Documents/schema.graphql">
-  <con:settings id="69bc9376-4b1f-416c-959c-f9f7f7896e84">
+<con:interface xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:GraphQLService" definitionUrl="file:/C:/Users/sarah.souza/Documents/schema.graphql" id="b11be57a-aa6c-49d1-aa9c-b23935adc67b" name="GraphQL Service 1" type="graphql">
+  <con:settings id="e2615376-6d9b-4a6f-b612-648c68c7343a">
     <con:setting id="b11be57a-aa6c-49d1-aa9c-b23935adc67bfileName">GraphQL-Service-1</con:setting>
   </con:settings>
-  <con:definitionCache type="TEXT" rootPart="file:/C:/Users/sarah.souza/Documents/schema.graphql">
+  <con:definitionCache rootPart="file:/C:/Users/sarah.souza/Documents/schema.graphql" type="TEXT">
     <con:part>
       <con:url>file:/C:/Users/sarah.souza/Documents/schema.graphql</con:url>
       <con:content>schema {

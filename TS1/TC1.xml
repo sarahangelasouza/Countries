@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" id="df004628-2955-466c-af64-5649ea983c9e" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TC1" searchProperties="true" timeout="0">
-  <con:settings id="25d128b1-0fa0-4b03-a98f-b500025cc963">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="df004628-2955-466c-af64-5649ea983c9e" keepSession="false" name="TC1" searchProperties="true" timeout="0">
+  <con:settings id="208c5c92-6f46-4198-bdaa-6f8df1131877">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">false</con:setting>
@@ -8,9 +8,9 @@
     <con:setting id="IncludeCoverage">true</con:setting>
     <con:setting id="df004628-2955-466c-af64-5649ea983c9efileName">TC1</con:setting>
   </con:settings>
-  <con:testStep type="datasource" name="Data Source" id="9f318ce3-3bec-453e-b873-36dc23cc8db7">
+  <con:testStep id="9f318ce3-3bec-453e-b873-36dc23cc8db7" name="Data Source" type="datasource">
     <con:settings/>
-    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:DataSourceStep">
+    <con:config xsi:type="con:DataSourceStep">
       <con:dataSource type="Data Generator">
         <con:configuration>
           <generatedDataCount>10</generatedDataCount>
@@ -37,23 +37,23 @@
       <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Get Weather Request" id="beb729d6-9e94-4288-89d0-340e79ed69cc">
+  <con:testStep id="beb729d6-9e94-4288-89d0-340e79ed69cc" name="Get Weather Request" type="restrequest">
     <con:settings/>
-    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="http://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep">
-      <con:restRequest name="Get Weather Request" id="4bd95571-943c-4282-97a1-e4c40f5cf71d" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="Weather" resourcePath="/data/2.5/weather" service="http://api.openweathermap.org">
+      <con:restRequest id="4bd95571-943c-4282-97a1-e4c40f5cf71d" mediaType="application/json" name="Get Weather Request">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>http://api.openweathermap.org</con:endpoint>
         <con:request/>
         <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="944ae588-d3c7-4789-8ee4-5a1d443a65b7" name="Valid HTTP Status Codes">
+        <con:assertion id="944ae588-d3c7-4789-8ee4-5a1d443a65b7" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200, 202</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="JsonPath Match" id="294a4f10-0668-4c32-a1cf-627bb8f303c3" name="Match content of [country]" disabled="true">
+        <con:assertion disabled="true" id="294a4f10-0668-4c32-a1cf-627bb8f303c3" name="Match content of [country]" type="JsonPath Match">
           <con:configuration>
             <path>$['sys']['country']</path>
             <content>${Data Source#Country}</content>
@@ -62,7 +62,7 @@
             <ignoreComments>false</ignoreComments>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="6b562d74-463b-4bbf-a83a-517b90a87579" name="Response SLA">
+        <con:assertion id="6b562d74-463b-4bbf-a83a-517b90a87579" name="Response SLA" type="Response SLA Assertion">
           <con:configuration>
             <SLA>300</SLA>
           </con:configuration>
@@ -89,17 +89,17 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep name="GraphQL Query Countries" type="graphqltestqueryrequest" id="88573a63-4487-4811-bb9b-d02b1492e208">
+  <con:testStep id="88573a63-4487-4811-bb9b-d02b1492e208" name="GraphQL Query Countries" type="graphqltestqueryrequest">
     <con:settings/>
-    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" interface="GraphQL Service 1" operationName="country" operationType="query" xsi:type="con:GraphQLTestRequestWithSchema">
-      <con:request name="GraphQL Query Countries" id="7637d012-c2f2-4126-9254-5cbe192602c0">
+    <con:config xsi:type="con:GraphQLTestRequestWithSchema" interface="GraphQL Service 1" operationName="country" operationType="query">
+      <con:request id="7637d012-c2f2-4126-9254-5cbe192602c0" name="GraphQL Query Countries">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
         <con:request>{"query":"{\n  country(code: \"${Get Weather Request#Response#$['sys']['country']}\") {\n    code\n    name\n    native\n    phone\n    continent {\n      code\n      name\n    }\n    currency\n    emoji\n    emojiU\n  }\n}\n","operationName":null,"variables":null}</con:request>
         <con:originalUri>https://countries.trevorblades.com/</con:originalUri>
-        <con:assertion type="JsonPath Match" id="2a9a585c-ebd5-445a-bf43-602d3d6e87ed" name="Match content of [code]">
+        <con:assertion id="2a9a585c-ebd5-445a-bf43-602d3d6e87ed" name="Match content of [code]" type="JsonPath Match">
           <con:configuration>
             <path>$['data']['country']['code']</path>
             <content>${Get Weather Request#Response#$['sys']['country']}</content>
@@ -120,13 +120,13 @@
       </con:request>
     </con:config>
   </con:testStep>
-  <con:testStep type="delay" name="Delay" id="2a29bdeb-7922-4925-bea0-f623319ebe96">
+  <con:testStep id="2a29bdeb-7922-4925-bea0-f623319ebe96" name="Delay" type="delay">
     <con:settings/>
     <con:config>
       <delay>2000</delay>
     </con:config>
   </con:testStep>
-  <con:testStep type="datasourceloop" name="Data Source Loop" id="60d1a597-a186-4e89-bf12-df91a9d5a8c2">
+  <con:testStep id="60d1a597-a186-4e89-bf12-df91a9d5a8c2" name="Data Source Loop" type="datasourceloop">
     <con:settings/>
     <con:config>
       <dataSourceStep>Data Source</dataSourceStep>

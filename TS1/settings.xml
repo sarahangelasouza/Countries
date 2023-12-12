@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testSuite xmlns:con="http://eviware.com/soapui/config" id="06c2e17f-ae9b-4a8e-a413-5b61f2161026" name="TS1">
-  <con:settings id="352c55a3-4149-4116-aab1-46a7288f8eb2">
+  <con:settings id="eb2af80f-4abd-4a32-ad43-dd8238806f6d">
     <con:setting id="06c2e17f-ae9b-4a8e-a413-5b61f2161026fileName">TS1</con:setting>
   </con:settings>
   <con:runType>PARALLELL</con:runType>
