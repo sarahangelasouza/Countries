@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="19395633-24eb-41ff-9d0c-5f3a9a4fef46" keepSession="false" name="TC1 v2.0.1" searchProperties="true" timeout="0">
-  <con:settings id="e0b53048-a844-4e45-8c36-3360bba22582">
+  <con:settings id="7e0c294f-036f-471a-a229-246a94b697cb">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">false</con:setting>
