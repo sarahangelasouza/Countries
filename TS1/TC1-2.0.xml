@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="df004628-2955-466c-af64-5649ea983c9e" keepSession="false" name="TC1" searchProperties="true" timeout="0">
-  <con:settings id="3bcad88f-fed7-49b9-a0fc-62212fede53e">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="19395633-24eb-41ff-9d0c-5f3a9a4fef46" keepSession="false" name="TC1 2.0" searchProperties="true" timeout="0">
+  <con:settings id="e0b53048-a844-4e45-8c36-3360bba22582">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">false</con:setting>
     <con:setting id="ErrorDetails">true</con:setting>
     <con:setting id="IncludeCoverage">true</con:setting>
-    <con:setting id="df004628-2955-466c-af64-5649ea983c9efileName">TC1</con:setting>
+    <con:setting id="19395633-24eb-41ff-9d0c-5f3a9a4fef46fileName">TC1-2.0</con:setting>
   </con:settings>
-  <con:testStep id="9f318ce3-3bec-453e-b873-36dc23cc8db7" name="Data Source" type="datasource">
+  <con:testStep id="2d163621-6653-4042-bb11-38b9027415c4" name="Data Source" type="datasource">
     <con:settings/>
     <con:config xsi:type="con:DataSourceStep">
       <con:dataSource type="Data Generator">
@@ -37,7 +37,7 @@
       <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
     </con:config>
   </con:testStep>
-  <con:testStep id="beb729d6-9e94-4288-89d0-340e79ed69cc" name="Get Weather Request" type="restrequest">
+  <con:testStep id="9dff3806-52f7-4a22-930c-b83b4ae83464" name="Get Weather Request" type="restrequest">
     <con:settings/>
     <con:config xsi:type="con:RestRequestStep" methodName="Weather" resourcePath="/data/2.5/weather" service="http://api.openweathermap.org">
       <con:restRequest id="4bd95571-943c-4282-97a1-e4c40f5cf71d" mediaType="application/json" name="Get Weather Request">
@@ -89,7 +89,7 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep id="88573a63-4487-4811-bb9b-d02b1492e208" name="GraphQL Query Countries" type="graphqltestqueryrequest">
+  <con:testStep id="81e927fc-6cb1-49d0-8221-fbe3cd71436d" name="GraphQL Query Countries" type="graphqltestqueryrequest">
     <con:settings/>
     <con:config xsi:type="con:GraphQLTestRequestWithSchema" interface="GraphQL Service 1" operationName="country" operationType="query">
       <con:request id="7637d012-c2f2-4126-9254-5cbe192602c0" name="GraphQL Query Countries">
@@ -120,13 +120,7 @@
       </con:request>
     </con:config>
   </con:testStep>
-  <con:testStep id="2a29bdeb-7922-4925-bea0-f623319ebe96" name="Delay" type="delay">
-    <con:settings/>
-    <con:config>
-      <delay>2000</delay>
-    </con:config>
-  </con:testStep>
-  <con:testStep id="60d1a597-a186-4e89-bf12-df91a9d5a8c2" name="Data Source Loop" type="datasourceloop">
+  <con:testStep id="4f303ebd-e806-48c2-aae1-cc62bae94424" name="Data Source Loop" type="datasourceloop">
     <con:settings/>
     <con:config>
       <dataSourceStep>Data Source</dataSourceStep>

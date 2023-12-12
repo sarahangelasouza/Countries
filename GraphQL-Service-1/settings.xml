@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:GraphQLService" definitionUrl="file:/C:/Users/sarah.souza/Documents/schema.graphql" id="b11be57a-aa6c-49d1-aa9c-b23935adc67b" name="GraphQL Service 1" type="graphql">
-  <con:settings id="e2615376-6d9b-4a6f-b612-648c68c7343a">
+  <con:settings id="1a001bfe-97c0-402b-945d-ab307ebf3031">
     <con:setting id="b11be57a-aa6c-49d1-aa9c-b23935adc67bfileName">GraphQL-Service-1</con:setting>
   </con:settings>
   <con:definitionCache rootPart="file:/C:/Users/sarah.souza/Documents/schema.graphql" type="TEXT">

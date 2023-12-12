@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:restMockAction xmlns:con="http://eviware.com/soapui/config" id="00a93afd-7128-4677-bbc5-0f6b0c94e5e0" method="GET" name="/data/2.5/weather" resourcePath="/data/2.5/weather">
-  <con:settings id="d9193147-65fa-4d31-abc9-6a7e44533fa1">
+  <con:settings id="06136f8b-a0c9-4d40-92c4-1b226e47209d">
     <con:setting id="00a93afd-7128-4677-bbc5-0f6b0c94e5e0fileName">%2Fdata%2F2.5%2Fweather</con:setting>
   </con:settings>
   <con:defaultResponse>Response 1</con:defaultResponse>

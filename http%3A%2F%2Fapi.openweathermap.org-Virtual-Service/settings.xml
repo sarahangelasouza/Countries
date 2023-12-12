@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:restMockService xmlns:con="http://eviware.com/soapui/config" host="localhost" id="080c198a-5f82-4efe-b84a-b637aef2fcc3" name="http://api.openweathermap.org Virtual Service" path="/" port="8090" routeEndpoint="http://api.openweathermap.org" routeModeEnabled="true">
-  <con:settings id="dd42ac8f-d7b6-4fab-8327-69f5b2ddff13">
+  <con:settings id="294bde0c-e8f9-4999-86aa-07b8e60bd42b">
     <con:setting id="080c198a-5f82-4efe-b84a-b637aef2fcc3fileName">http%3A%2F%2Fapi.openweathermap.org-Virtual-Service</con:setting>
   </con:settings>
   <con:properties/>
