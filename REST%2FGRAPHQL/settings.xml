@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="11dcd355-f28d-4040-9044-c2726cde536b" name="REST/GRAPHQL">
+  <con:settings id="a8a1f24f-673b-48d6-896f-709edb664894">
+    <con:setting id="11dcd355-f28d-4040-9044-c2726cde536bfileName">REST%2FGRAPHQL</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

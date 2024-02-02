@@ -10,7 +10,7 @@
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
       <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
-      <con:request>{"query":"{\n  continents {\n    code\n    name\n    countries {\n      code\n      name\n      native\n      phone\n\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:request>{"query":"{\n  continents {\n    code\n    name\n  }\n}\n","operationName":null,"variables":null}</con:request>
       <con:originalUri>https://countries.trevorblades.com/</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
@@ -75,9 +75,12 @@
   <con:graphQLOperation bindingOperationName="country" id="c01941ee-8f66-473d-8c93-6c9a32bb76e6" name="country">
     <con:settings/>
     <con:graphQLRequest id="7637d012-c2f2-4126-9254-5cbe192602c0" name="country">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://countries.trevorblades.com/</con:endpoint>
-      <con:request>{"query":"{\n  country(code: \"string\") {\n    code\n    name\n    native\n    phone\n    continent {\n      code\n      name\n      countries {\n        code\n        name\n        native\n        phone\n        currency\n        languages {\n          code\n          name\n          native\n          rtl\n        }\n        emoji\n        emojiU\n      }\n    }\n    currency\n    emoji\n    emojiU\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:request>{"query":"{\n  country(code: \"${#Project#ProjCountry}\") {\n    code\n    name\n    native\n    phone\n    continent {\n      code\n      name\n      countries {\n        code\n        name\n        native\n        phone\n        currency\n        languages {\n          code\n          name\n          native\n          rtl\n        }\n        emoji\n        emojiU\n      }\n    }\n    currency\n    emoji\n    emojiU\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:originalUri>https://countries.trevorblades.com/</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>

@@ -75,6 +75,7 @@
         <con:parameters>
           <con:entry key="q" value="${#TestCase#locationParam}"/>
           <con:entry key="appid" value="85c705dd76051cb3d8e5540b300279d4"/>
+          <con:entry key="units" value=""/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>q</con:entry>

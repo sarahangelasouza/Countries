@@ -41,11 +41,30 @@
     <con:setting id="55993061-1153-42fe-95dc-5030078aa482fileName">Countries-readyapi-project</con:setting>
   </con:settings>
   <con:requirements/>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>ProjCountry</con:name>
+      <con:value>BR</con:value>
+    </con:property>
+  </con:properties>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
-  <con:oAuth2ProfileContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>oauth</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessToken>asddadada</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+      <con:manualAccessTokenExpirationTime/>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
   <con:oAuth1ProfileContainer/>
   <con:eventHandlers name="RequestFilter.filterRequest" type="RequestFilter.filterRequest">
     <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
@@ -80,10 +99,28 @@
     <con:service name="http://api.openweathermap.org" type="REST">
       <con:endpoint areGlobalProxySettingsIgnored="false" authProfile="No Authorization" proxyHost="" proxyPassword="" proxyPort="" proxyUsername="">http://localhost:8090</con:endpoint>
     </con:service>
+    <con:property>
+      <con:name>ProjCountry</con:name>
+      <con:value/>
+    </con:property>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
-  <con:authRepository/>
+  <con:authRepository>
+    <con:oAuth20AuthEntry>
+      <con:name>oauth</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessToken>asddadada</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+      <con:manualAccessTokenExpirationTime/>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+  </con:authRepository>
   <con:environmentSpec>
     <con:entry environmentId="9a61d028-7514-4466-8d3e-c38753b557c5">
       <con:authProfile>No Authorization</con:authProfile>

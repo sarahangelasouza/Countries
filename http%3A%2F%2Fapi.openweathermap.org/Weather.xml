@@ -23,12 +23,11 @@
         <con:path/>
         <con:description/>
       </con:parameter>
-      <con:parameter>
+      <con:parameter required="true">
         <con:name>units</con:name>
-        <con:value>metric</con:value>
+        <con:value/>
         <con:style>QUERY</con:style>
-        <con:default>metric</con:default>
-        <con:description/>
+        <con:default/>
       </con:parameter>
     </con:parameters>
     <con:representation type="RESPONSE">
@@ -49,6 +48,12 @@
       <con:params/>
       <con:element>weat:Fault</con:element>
     </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Fault</con:element>
+    </con:representation>
     <con:request id="4bd95571-943c-4282-97a1-e4c40f5cf71d" mediaType="application/json" name="Request 1">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -57,12 +62,13 @@
       <con:request/>
       <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>oauth</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
         <con:entry key="q" value="Boston"/>
+        <con:entry key="units" value="metric"/>
       </con:parameters>
       <con:parameterOrder>
         <con:entry>q</con:entry>
@@ -110,10 +116,12 @@
     <con:request id="c7eba91e-0915-4fbb-b1a5-0a493243c283" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://api.openweathermap.org</con:endpoint>
+      <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
         <con:entry key="q" value="Boston"/>
         <con:entry key="appid" value="85c705dd76051cb3d8e5540b300279d4"/>
